@@ -1,0 +1,11 @@
+streamlit
+matplotlib
+plotly
+bokeh
+altair
+vega_datasets
+pandas
+numpy
+seaborn
+sklearn
+networkx
