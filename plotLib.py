@@ -40,6 +40,7 @@ def bokehPlot(p):
         from bokeh.sampledata.unemployment import data as unemployment
         from bokeh.sampledata.us_counties import data as counties
     except:
+        import bokeh
         bokeh.sampledata.download()
         from bokeh.sampledata.unemployment import data as unemployment
         from bokeh.sampledata.us_counties import data as counties
