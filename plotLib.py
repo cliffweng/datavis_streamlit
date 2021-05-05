@@ -36,8 +36,13 @@ def bokehPlot(p):
     from bokeh.io import show
     from bokeh.models import LogColorMapper
     from bokeh.palettes import Viridis6 as palette
-    from bokeh.sampledata.unemployment import data as unemployment
-    from bokeh.sampledata.us_counties import data as counties
+    try:
+        from bokeh.sampledata.unemployment import data as unemployment
+        from bokeh.sampledata.us_counties import data as counties
+    except:
+        bokeh.sampledata.download()
+        from bokeh.sampledata.unemployment import data as unemployment
+        from bokeh.sampledata.us_counties import data as counties
 
     palette = tuple(reversed(palette))
 
