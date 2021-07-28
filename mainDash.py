@@ -3,8 +3,9 @@ import matplotlib.pyplot as plt
 from bokeh.plotting import figure
 import pandas as pd
 import numpy as np
-import plotLib
 import seaborn as sns
+
+import plotLib
 
 @st.cache
 def fetchDataset(dataset):

@@ -9,3 +9,4 @@ numpy
 seaborn
 sklearn
 networkx
+dtale
